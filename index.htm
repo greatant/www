@@ -11,10 +11,13 @@
       align-items:center;
       justify-content:center;
       font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background: #f7f7f8;
+      /* Background image from the img folder. Has a fallback color and uses cover to fill the viewport. */
+      background: #f7f7f8 url('img/quick-smart-nachos-63819-1.jpeg') center/cover no-repeat;
       color: #111;
+      min-height:100vh;
     }
-    .card { text-align:center; padding:2rem; border-radius:8px; background:#fff; box-shadow:0 6px 20px rgba(0,0,0,0.06); }
+    .card { text-align:center; padding:2rem; border-radius:8px; /* translucent to improve readability over the image */
+      background: rgba(255,255,255,0.88); box-shadow:0 6px 20px rgba(0,0,0,0.06); }
     a { color: #0366d6; text-decoration:none; }
   </style>
 </head>
